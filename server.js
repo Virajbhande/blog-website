@@ -28,6 +28,7 @@ app.listen(PORT, () => console.log(`Server is running successfully on PORT ${POR
 const USERNAME = process.env.DB_USERNAME;
 const PASSWORD = process.env.DB_PASSWORD;
 
-const URL = process.env.MONGODB_URI || `mongodb://${USERNAME}:${PASSWORD}@blogweb-shard-00-00.ch1hk.mongodb.net:27017,blogweb-shard-00-01.ch1hk.mongodb.net:27017,blogweb-shard-00-02.ch1hk.mongodb.net:27017/BLOG?ssl=true&replicaSet=atlas-lhtsci-shard-0&authSource=admin&retryWrites=true&w=majority`;
+const URL = process.env.MONGODB_URL || `mongodb+srv://user1:viraj81@blog-website.zk4yxyr.mongodb.net/?retryWrites=true&w=majority`;
 
 Connection(URL);
+
